@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular cas 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+<script src="movieDb.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+    <h1 class="imenik">Telefonski imenik</h1><br/>
+    <input type="text" class="form-control" id="search"   placeholder="search..." ng-model="searchText"><br/>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offSet-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Nickname</th>
+                        <th>Nummber</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="person in persons | filter:searchText">
+                        <td class="name">{{person.name}}</td>
+                        <td class="surname">{{person.surname}}</td>
+                        <td class="nickname">{{person.nickname}}</td>
+                        <td class="nummber" >{{person.nummber}}</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.imenik{
+    letter-spacing: 10px;
+    color: red;
+    font-weight: bold;
+    margin-left: 32%;
+    
+}.table th{
+    color: whitesmoke;
+}.table td{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+}.name{
+    background-color: rgb(73, 73, 18);
+    color: white;
+}.surname{
+    background-color: rgb(43, 43, 7);
+    color: white;
+
+}.nickname{
+    background-color: rgb(73, 73, 18);
+    color: white;
+
+}.nummber{
+    color: white;
+    background-color: rgb(43, 43, 7);
+
+}body{
+    background-color: rgb(32, 32, 9);
+}table{
+    margin-left: 28%;
+    
+    
+}h1{
+    color: white;
+    margin-left: 28%;
+}.pronadji{
+    background-color: orange;
+}.form-control{
+    margin-left: 18%;
+    width: 905px;
+    
+    
+    
+}

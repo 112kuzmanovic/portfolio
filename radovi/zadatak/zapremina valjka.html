@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZAPREMINA VALJKA</title>
+    <script type="text/javascript">
+    
+var pi=3.14;
+function zapremina(r,h){
+    var h;
+    var r;
+    var p;
+
+    r=parseInt(prompt("unesi vrijednost za 'r'"));
+    h=parseInt(prompt("unesi vrijednost 'h'"));
+    p=r*r*pi*h;
+    if(r<=0 || h<=0){
+        alert("Greska!!")
+    }else{
+        alert("zapremina valjka je"+""+p+"cm");
+    }
+    }
+
+
+
+
+    </script>
+</head>
+<body>
+    <button name="button" onclick="zapremina()">IZRACUNAJ ZAPREMINU VALJKA</button><br><br>
+    
+    
+</body>
+</html>
